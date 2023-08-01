@@ -1,8 +1,11 @@
 ﻿Docker and modelling
+
 This is very similar to Singularity. Assuming you have Docker installed you just need to pull and run a pre-build Docker image from dockerhub:
 docker run -v  /$path_to_input_dir/:/mnt/data -h master --privileged -it joostmadrid/normmodel_pcnv21:0.1 bash
+
 Example command from inside docker
 /opt/conda/bin/python normative_modelling_madrid_31.py -c /mnt/data/train_covars.txt -d /mnt/data/train_features.txt -t /mnt/data/test_covars.txt -r /mnt/data/test_features.txt -o /mnt/data/ -w 'WarpSinArcsinh' -s age sex -a blr -q yes
+
 Code parameters 
 -c: train covariates file path
 -d: train responses file path
@@ -24,14 +27,12 @@ Code parameters
 -f: adaptation responses file path, default=None
 (Note: default values mean that if the parameter is not specified by the user, the default value will be used if needed. For instance, if the user does not provide the number of knots, the default value 5 will be used. However, if for instance the user provides test data and doesn’t specify the number of cross-validation folds because it does not make sense, it won’t use the cv-folds parameter even if there is a default value for cv-folds.)
 
-
 Input files format
 In both covariates and responses files each row is a subject.
 Covariates files: 
-* columns: age and sex must be present. Scanners/sites must be binary variables (can be present or not). Other covariates can be present such as euler, total volume…
+* columns: age and sex must be present. Scanners/sites must be binary variables (can be present or not). Other covariates can be present such as euler number and total brain volume.
 Response files: 
 * columns: each column is a feature.
-
 
 Note
 1. Gaussian Process Regression is not compatible with: warping and transfer learning.
