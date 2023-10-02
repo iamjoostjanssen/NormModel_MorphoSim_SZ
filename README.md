@@ -1,7 +1,7 @@
 # NormModel_MorphoSim_SZ
 
 
-This repository contains information pertaining to the study Normative Modelling of Morphometric Similarity in health and schizophrenia (Janssen et al. 2024).
+This repository contains information pertaining to the study Normative Modelling of Morphometric Similarity in Health and Schizophrenia (Janssen et al. 2024).
 
 We created a docker that includes the [PCN-toolkit](https://pcntoolkit.readthedocs.io/en/latest/) and added extra automated features for model evaluation and visualization. Instructions for installing and running the docker for reference modelling can be found [here](https://github.com/iamjoostjanssen/Normodel_MorphoSim_SZ/blob/main/Docker_and_ReferenceModelling.txt).
 
