@@ -1,7 +1,7 @@
 # NormModel_MorphoSim_SZ
 
 
-Normative modelling of Morphometric Similarity in health and Schizophrenia
+Normative modelling of Morphometric Similarity in Health and Schizophrenia
 
 This repository contains information pertaining to the study Normative Modelling of Morphometric Similarity in health and schizophrenia (Janssen et al. 2024).
 
